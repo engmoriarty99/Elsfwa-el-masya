@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elsfwa el masya    </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* Replace 'background.jpg' with your actual background image file */
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #call-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <a id="call-button" href="tel:+966538599938">Call Now</a>
+
+    <script>
+        document.body.addEventListener('click', function() {
+            // When any part of the screen is clicked, initiate the call action
+            window.location.href = 'tel:+966538599938'; // Replace with your actual phone number
+        });
+    </script>
+</body>
+</html>
